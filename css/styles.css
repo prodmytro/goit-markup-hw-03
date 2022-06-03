@@ -6,6 +6,37 @@
   --white-color: #ffffff;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid seagreen; */
+}
+
 .page {
   font-family: Roboto, sans-serif;
   background-color: var(--white-color);
@@ -13,6 +44,8 @@
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -20,6 +53,7 @@
 }
 
 .section-title {
+  margin-bottom: 50px;
   color: var(--second-text-color);
   text-align: center;
   font-weight: 700;
@@ -43,6 +77,10 @@
 }
 
 /*----------------------HEADER STYLE----------------------*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-logo {
   font-family: 'Raleway';
@@ -104,9 +142,12 @@ span.logo-prefix {
 
 .hero {
   background-color: var(--footer-hero-background);
+  /* outline: 2px solid salmon; */
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -119,11 +160,18 @@ span.logo-prefix {
 
 /* ASSET SECTION */
 
+.asset {
+  margin-top: 94px;
+  /* outline: 2px solid slateblue; */
+}
+
 .asset-list {
   color: var(--second-text-color);
 }
 
 .asset-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -132,6 +180,8 @@ span.logo-prefix {
 }
 
 .asset-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -140,7 +190,23 @@ span.logo-prefix {
 
 /* WHAT WE DO */
 
+.whatwedo {
+  margin-top: 94px;
+}
+
+.whatwedo-list {
+  padding-bottom: 94px;
+}
+
 /* OUR TEAM */
+
+.our-team {
+  background-color: #f5f4fa;
+}
+
+.our-team-list {
+  padding-bottom: 94px;
+}
 
 .our-team-item {
   background: var(--white-color);
@@ -150,6 +216,7 @@ span.logo-prefix {
 }
 
 .our-team-name {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -159,6 +226,7 @@ span.logo-prefix {
 }
 
 .our-team-position {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -168,7 +236,13 @@ span.logo-prefix {
 
 /* PORTFOLIO */
 
-.portfolio {
+.container.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.portfolio-filter-button.list {
+  margin-bottom: 50px;
 }
 
 .filter-button {
@@ -200,6 +274,7 @@ span.logo-prefix {
   border: 1px solid #eeeeee;
 }
 .portfolio-item-title {
+  margin-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -207,6 +282,7 @@ span.logo-prefix {
   color: var(--second-text-color);
 }
 .portfolio-group {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
