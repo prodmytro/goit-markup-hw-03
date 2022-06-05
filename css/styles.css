@@ -28,6 +28,10 @@ ul {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -59,7 +63,6 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -77,6 +80,10 @@ ul {
 }
 
 /*----------------------HEADER STYLE----------------------*/
+
+.header-cotainer {
+  display: flex;
+}
 
 .header {
   border-bottom: 1px solid #ececec;
