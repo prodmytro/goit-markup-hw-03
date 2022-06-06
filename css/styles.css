@@ -13,12 +13,15 @@
 /* card set flex start*/
 
 .card-set {
-  color: var(--second-text-color);
   display: flex;
+  flex-wrap: wrap;
+
+  margin: calc(-1 * var(--indent) / 2);
 }
 
 .card-set-item {
-  flex-basis: calc(100% - var(--indent) * (var(--item) - 1) / var(--item));
+  flex-basis: calc((100% - var(--indent) * var(--item)) / var(--item));
+
   margin: calc(var(--indent) / 2);
 }
 
@@ -71,7 +74,6 @@ img {
 .list {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .link {
@@ -244,6 +246,13 @@ span.logo-prefix {
   /* outline: 2px solid slateblue; */
 }
 
+.asset-list {
+  /* display: flex;
+  flex-wrap: wrap; */
+  --item: 4;
+  margin: -15px;
+}
+
 .asset-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -275,6 +284,7 @@ span.logo-prefix {
 
 .whatwedo-list {
   padding-bottom: 47px;
+  margin: -15px;
 }
 
 /* OUR TEAM */
@@ -285,6 +295,7 @@ span.logo-prefix {
 
 .our-team-list {
   /* padding-bottom: 94px; */
+  --item: 4;
 }
 
 .our-team-item {
@@ -306,8 +317,9 @@ span.logo-prefix {
 
 .our-team-position {
   margin-top: 10px;
+  padding-bottom: 30px;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
@@ -320,11 +332,14 @@ span.logo-prefix {
   margin-bottom: 94px;
 }
 
-.portfolio-filter-button.list {
+.portfolio-filter-button {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
 .filter-button {
+  padding: 6px 22px;
   font-family: inherit;
   border-radius: 4px;
   font-weight: 500;
@@ -338,6 +353,10 @@ span.logo-prefix {
   background-color: #f5f4fa;
 }
 
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button:hover,
 .filter-button:focus,
 .filter-button.current {
@@ -348,10 +367,24 @@ span.logo-prefix {
   border-radius: 4px;
 }
 
+/* .portfolio-list {
+  display: flex;
+  --item: 3;
+}
+
 .portfolio-item {
   background: var(--white-color);
   border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
+} */
+
+.portfolio-wrapper {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
+
 .portfolio-item-title {
   margin-top: 20px;
   font-weight: 700;
@@ -360,6 +393,7 @@ span.logo-prefix {
   letter-spacing: 0.06em;
   color: var(--second-text-color);
 }
+
 .portfolio-group {
   margin-top: 4px;
   font-size: 16px;
@@ -372,6 +406,8 @@ span.logo-prefix {
 
 footer {
   background-color: var(--footer-hero-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -387,7 +423,8 @@ footer {
   font-style: normal;
 }
 
-.footer-contacts-adress {
+.footer-contacts .adress {
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.77;
   letter-spacing: 0.03em;
@@ -399,4 +436,8 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
