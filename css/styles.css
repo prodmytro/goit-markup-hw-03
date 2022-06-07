@@ -10,7 +10,7 @@
   --indent: 30px;
 }
 
-/* card set flex start*/
+/* card set flex grid start*/
 
 .card-set {
   display: flex;
@@ -25,7 +25,7 @@
   margin: calc(var(--indent) / 2);
 }
 
-/* end card set flex */
+/* end card set flex grid */
 
 html {
   box-sizing: border-box;
@@ -50,7 +50,7 @@ ul {
 }
 
 p:last-child {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 img {
@@ -159,7 +159,7 @@ span.logo-prefix {
   color: var(--accent-color);
 }
 
-.site-nav-item {
+.site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -242,7 +242,7 @@ span.logo-prefix {
 /* ASSET SECTION */
 
 .asset {
-  /* margin-top: 47px; */
+  padding-bottom: 47px;
   /* outline: 2px solid slateblue; */
 }
 
@@ -279,7 +279,7 @@ span.logo-prefix {
 /* WHAT WE DO */
 
 .whatwedo {
-  /* margin-top: 47px; */
+  padding-top: 47px;
 }
 
 .whatwedo-list {
@@ -305,8 +305,12 @@ span.logo-prefix {
   border-radius: 0px 0px 4px 4px;
 }
 
+.our-team-wrapper {
+  padding: 30px 0;
+}
+
 .our-team-name {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -317,7 +321,6 @@ span.logo-prefix {
 
 .our-team-position {
   margin-top: 10px;
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -327,10 +330,10 @@ span.logo-prefix {
 
 /* PORTFOLIO */
 
-.container.portfolio {
+/* .section.portfolio {
   margin-top: 94px;
   margin-bottom: 94px;
-}
+} */
 
 .portfolio-filter-button {
   display: flex;
@@ -386,7 +389,7 @@ span.logo-prefix {
 }
 
 .portfolio-item-title {
-  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
