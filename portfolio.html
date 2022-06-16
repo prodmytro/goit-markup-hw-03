@@ -26,19 +26,27 @@
         <a class="header-logo link" href="./"><span class="logo-prefix">Web</span>Studio</a>
         <nav>
           <ul class="site-nav list">
-            <li class="site-nav-item"><a href="./" class="link">Студия</a></li>
-            <li class="site-nav-item">
-              <a href="./portfolio.html" class="current link">Портфолио</a>
-            </li>
+            <li class="site-nav-item"><a href="./" class="current link">Студия</a></li>
+            <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-contacts list">
           <li class="header-contacts-item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="header-contacts-link link">
+              <svg width="16" height="12" class="header-contacts-icon">
+                <use href="./images/icons-set.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="header-contacts-item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="header-contacts-link link">
+              <svg width="10" height="16" class="header-contacts-icon">
+                <use href="./images/icons-set.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -156,18 +164,65 @@
     </main>
     <footer>
       <div class="container">
-        <a href="./" class="footer-logo link"><span class="logo-prefix">Web</span>Studio</a>
-        <address class="footer-addr">
-          <ul class="footer-contacts list">
-            <li class="footer-contacts-item adress">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="footer-contacts-item">
-              <a href="mailto:info@example.com" class="footer-contacts link">info@example.com</a>
-            </li>
-            <li class="footer-contacts-item">
-              <a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer">
+          <div class="footer-left">
+            <a href="./" class="footer-logo link"><span class="logo-prefix">Web</span>Studio</a>
+            <address class="footer-addr">
+              <ul class="footer-contacts list">
+                <li class="footer-contacts-item adress">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="footer-contacts-item">
+                  <a href="mailto:info@example.com" class="footer-contacts link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-contacts-item">
+                  <a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-socials">
+            <h2 class="footer-socials-header">присоединяйтесь</h2>
+            <ul class="footer-soc-set card-set list">
+              <li class="card-set-item">
+                <button class="btn">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons-set.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </button>
+              </li>
+              <li class="card-set-item">
+                <button class="btn">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons-set.svg#icon-twttr"></use>
+                    </svg>
+                  </a>
+                </button>
+              </li>
+              <li class="card-set-item">
+                <button class="btn">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons-set.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </button>
+              </li>
+              <li class="card-set-item">
+                <button class="btn">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons-set.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

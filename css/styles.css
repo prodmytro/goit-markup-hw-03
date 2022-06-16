@@ -148,7 +148,7 @@ span.logo-prefix {
 }
 
 .site-nav .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -177,6 +177,11 @@ span.logo-prefix {
   margin-right: 50px;
 }
 
+.header-contacts-link {
+  display: flex;
+  justify-content: center;
+}
+
 .header-contacts a {
   color: #757575;
   font-weight: 500;
@@ -190,14 +195,36 @@ span.logo-prefix {
   color: var(--accent-color);
 }
 
+.header-contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  align-self: center;
+}
+
 /*----------------------MAIN----------------------*/
 
 /* HERO SECTION */
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg-overlay.png), url(../images/hero-bg.jpg);
+  /* background: rgba(47, 48, 58, 0.4); */
+  background-color: #c4c4c4;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--footer-hero-background);
+  /* background-color: var(--footer-hero-background); */
   /* outline: 2px solid salmon; */
 }
 
@@ -236,7 +263,7 @@ span.logo-prefix {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: ##188ce8;
+  background-color: #188ce8;
 }
 
 /* ASSET SECTION */
@@ -266,6 +293,10 @@ span.logo-prefix {
 /* .asset-item:not(:last-child) {
   margin-right: 30px;
 } */
+
+.asset-list-img {
+  margin-bottom: 30px;
+}
 
 .asset-text {
   margin-top: 0;
@@ -326,6 +357,75 @@ span.logo-prefix {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+}
+
+.our-team-soc {
+  margin-top: 16px;
+  --item: 4;
+  --indent: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* .our-team-soc-item {
+  width: 44px;
+} */
+
+.our-team-soc-btn {
+  display: block;
+  border: none;
+  background: none;
+  width: 44px;
+  height: 44px;
+}
+
+.our-team-soc-btn:hover,
+.our-team-soc-btn:focus {
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.our-team-soc-link {
+  fill: #afb1b8;
+}
+
+.our-team-soc-link:hover {
+  fill: var(--white-color);
+}
+
+.our-team-soc-icon {
+  /* fill: #afb1b8; */
+  width: 20px;
+  height: 20px;
+}
+
+.our-team-soc-icon:hover {
+  fill: var(--white-color);
+}
+
+/* PERMANENT CLIENTS */
+
+.perm-clients-list {
+  --item: 6;
+  --indent: 30px;
+  margin-right: -30px;
+}
+
+.perm-clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.perm-client-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.perm-client-item:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 /* PORTFOLIO */
@@ -413,6 +513,11 @@ footer {
   padding-bottom: 60px;
 }
 
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-logo {
   font-family: 'Raleway';
   color: var(--white-color);
@@ -443,4 +548,50 @@ footer {
 
 .footer-contacts-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-socials {
+  margin-left: 70px;
+}
+
+.footer-socials-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.footer-soc-set {
+  margin-top: 20px;
+  --item: 4;
+  --indent: 10px;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--accent-color);
+  cursor: pointer;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+  /* background-color: #000000; */
 }
