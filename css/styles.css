@@ -4,6 +4,7 @@
   --footer-hero-background: #2f303a;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --icon-fill-color: #afb1b8;
 
   /* card set */
   --item: 3;
@@ -368,37 +369,41 @@ span.logo-prefix {
   padding-right: 32px;
 }
 
-.our-team-soc-btn {
-  display: block;
-  border: none;
-  background: none;
-  width: 44px;
-  height: 44px;
-}
-
-.our-team-soc-btn:hover,
-.our-team-soc-btn:focus {
-  background: #2196f3;
-  border-radius: 50%;
-  cursor: pointer;
+.our-team-soc-item {
 }
 
 .our-team-soc-link {
-  fill: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--icon-fill-color);
 }
 
-.our-team-soc-link:hover {
-  fill: var(--white-color);
+.our-team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--icon-fill-color);
+}
+
+.our-team-soc-link:hover,
+.our-team-soc-link:focus {
+  fill: #ffffff;
+  background: var(--accent-color);
+  border-radius: 50%;
 }
 
 .our-team-soc-icon {
-  /* fill: #afb1b8; */
   width: 20px;
   height: 20px;
-}
-
-.our-team-soc-icon:hover {
-  fill: var(--white-color);
 }
 
 /* PERMANENT CLIENTS */
@@ -577,28 +582,25 @@ footer {
   --indent: 10px;
 }
 
-.btn {
-  background: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-}
-
-.btn:hover,
-.btn:focus {
-  background: var(--accent-color);
-  cursor: pointer;
-}
-
 .footer-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
   width: 44px;
   height: 44px;
+  fill: var(--icon-fill-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  fill: #ffffff;
+  background: var(--accent-color);
+  border-radius: 50%;
 }
 
 .footer-soc-icon {
   width: 20px;
   height: 20px;
-  fill: var(--white-color);
-  /* background-color: #000000; */
 }
