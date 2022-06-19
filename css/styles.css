@@ -408,6 +408,11 @@ span.logo-prefix {
 
 /* PERMANENT CLIENTS */
 
+.perm-client-item {
+}
+.card-set-item {
+}
+
 .perm-clients-list {
   --item: 6;
   --indent: 30px;
@@ -419,14 +424,30 @@ span.logo-prefix {
 }
 
 .perm-client-item {
-  border: 1px solid #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--icon-fill-color);
   border-radius: 4px;
-  fill: #afb1b8;
+  fill: var(--icon-fill-color);
 }
 
 .perm-client-item:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+
+.perm-clients-link {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  fill: var(--icon-fill-color);
+}
+
+.perm-clients-link:hover {
+  fill: var(--accent-color);
 }
 
 /* PORTFOLIO */
