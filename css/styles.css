@@ -169,9 +169,6 @@ span.logo-prefix {
   margin-left: auto;
 }
 
-.header-contacts-item .link {
-}
-
 .header-contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -186,9 +183,6 @@ span.logo-prefix {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.header-contacts a {
 }
 
 .header-contacts a:hover,
@@ -268,12 +262,9 @@ span.logo-prefix {
 
 .asset {
   padding-bottom: 47px;
-  /* outline: 2px solid slateblue; */
 }
 
 .asset-list {
-  /* display: flex;
-  flex-wrap: wrap; */
   --item: 4;
   margin: -15px;
 }
@@ -290,14 +281,12 @@ span.logo-prefix {
 
 .asset-box-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-}
-
-.asset-list-img {
-  margin: auto;
 }
 
 .asset-text {
@@ -369,49 +358,30 @@ span.logo-prefix {
   padding-right: 32px;
 }
 
-.our-team-soc-item {
-}
-
 .our-team-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: var(--icon-fill-color);
-}
-
-.our-team-soc-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  fill: var(--icon-fill-color);
+  color: var(--icon-fill-color);
 }
 
 .our-team-soc-link:hover,
 .our-team-soc-link:focus {
-  fill: #ffffff;
-  background: var(--accent-color);
-  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .our-team-soc-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 /* PERMANENT CLIENTS */
-
-.perm-client-item {
-}
-.card-set-item {
-}
 
 .perm-clients-list {
   --item: 6;
@@ -422,40 +392,29 @@ span.logo-prefix {
 .perm-clients-list:not(:last-child) {
   margin-right: 30px;
 }
-
-.perm-client-item {
+.perm-clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 92px;
   width: 170px;
+  color: var(--icon-fill-color);
   border: 1px solid var(--icon-fill-color);
   border-radius: 4px;
-  fill: var(--icon-fill-color);
+  color: var(--icon-fill-color);
 }
 
-.perm-client-item:hover {
-  fill: var(--accent-color);
+.perm-clients-link:hover,
+.perm-clients-link:focus {
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-.perm-clients-link {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  fill: var(--icon-fill-color);
-}
-
-.perm-clients-link:hover {
-  fill: var(--accent-color);
+.perm-clients-icon {
+  fill: currentColor;
 }
 
 /* PORTFOLIO */
-
-/* .section.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
-} */
 
 .portfolio-filter-button {
   display: flex;
@@ -489,11 +448,11 @@ span.logo-prefix {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
-.portfolio-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+  box-shadow: 0px 10px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -512,7 +471,7 @@ span.logo-prefix {
   color: var(--second-text-color);
 }
 
-.portfolio-group {
+.portfolio-item-group {
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
@@ -589,21 +548,21 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: var(--icon-fill-color);
+  color: var(--icon-fill-color);
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  fill: #ffffff;
-  background: var(--accent-color);
-  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .footer-soc-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
